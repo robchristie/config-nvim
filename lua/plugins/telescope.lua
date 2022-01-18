@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 telescope.load_extension('media_files')
+telescope.load_extension('file_browser')
 
 local actions = require "telescope.actions"
 
@@ -11,7 +12,7 @@ telescope.setup {
   defaults = {
 
     layout_strategy = 'horizontal',
-    prompt_position = 'top',
+    layout_config = { prompt_position = 'top' },
 
     prompt_prefix = " ",
     selection_caret = " ",

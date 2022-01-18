@@ -58,3 +58,6 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader><c-f>", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>b", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Telescope File Browser
+keymap("n", "<leader>fb", ":Telescope file_browser<cr>", opts)
