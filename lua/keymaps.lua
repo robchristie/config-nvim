@@ -25,6 +25,9 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Use old yank behaviour
+keymap("n", "Y", "yy", opts)
+
 -- Open explorer
 keymap("n", "<leader>e", ":<cr>", opts)
 
