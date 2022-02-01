@@ -34,7 +34,7 @@ opt.shiftwidth = 4               -- the number of spaces inserted for each inden
 opt.tabstop = 4                  -- insert 4 spaces for a tab
 opt.cursorline = false           -- highlight the current line
 opt.number = true                -- set numbered lines
-opt.relativenumber = false       -- set relative numbered lines
+opt.relativenumber = true        -- set relative numbered lines
 opt.numberwidth = 4              -- set number column width to 2 {default 4}
 opt.signcolumn = "yes"           -- always show the sign column, otherwise it would shift
                                   -- the text each time
