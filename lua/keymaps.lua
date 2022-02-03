@@ -29,7 +29,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "Y", "yy", opts)
 
 -- Open explorer
-keymap("n", "<leader>e", ":<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)

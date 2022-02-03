@@ -32,13 +32,13 @@ opt.writebackup = false          -- if a file is being edited by another program
 opt.expandtab = true             -- convert tabs to spaces
 opt.shiftwidth = 4               -- the number of spaces inserted for each indentation
 opt.tabstop = 4                  -- insert 4 spaces for a tab
-opt.cursorline = false           -- highlight the current line
+opt.cursorline = true            -- highlight the current line
 opt.number = true                -- set numbered lines
 opt.relativenumber = true        -- set relative numbered lines
 opt.numberwidth = 4              -- set number column width to 2 {default 4}
 opt.signcolumn = "yes"           -- always show the sign column, otherwise it would shift
                                   -- the text each time
-opt.wrap = false                 -- display lines as one long line
+opt.wrap = true                  -- display lines as one long line
 opt.scrolloff = 8                -- keep cursor centered
 opt.sidescrolloff = 8
 
