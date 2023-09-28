@@ -8,6 +8,17 @@ return {
         settings = {
           pylsp = {
             plugins = {
+              black = {
+                enabled = true,
+                preview = true,
+              },
+              mypy = {
+                enabled = true,
+              },
+              ruff = {
+                enabled = true,
+                extendSelect = { "I" },
+              },
               pycodestyle = {
                 ignore = { "E203" },
                 maxLineLength = 88,

@@ -11,10 +11,10 @@ return {
         nls.builtins.diagnostics.markdownlint,
         nls.builtins.formatting.clang_format,
         nls.builtins.formatting.shfmt,
-        nls.builtins.formatting.isort,
-        nls.builtins.formatting.black.with({
-          extra_args = { "--preview" }
-        }),
+        --nls.builtins.formatting.isort,
+        --nls.builtins.formatting.black.with({
+        --  extra_args = { "--preview" }
+        --}),
         --nls.builtins.diagnostics.flake8.with({
         --  extra_args = { "--ignore=E203", "--max-line-length=88" }
         --}),

@@ -9,7 +9,7 @@ local opt = vim.opt
 opt.winbar = " %{%v:lua.vim.fn.expand('%F')%}  %{%v:lua.require'nvim-navic'.get_location()%}"
 
 --vim.g.python3_host_prog = "$HOME/neovim/deps/python/bin/python3.11"
-vim.g.python3_host_prog = "/local/users/christir/venv/default/bin/python3"
+vim.g.python3_host_prog = "/local/users/christir/system/venv/main/bin/python3"
 
 opt.spelllang = "en_au"
 opt.ignorecase = true -- ignore case in search patterns
