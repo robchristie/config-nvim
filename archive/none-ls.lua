@@ -1,0 +1,27 @@
+-- return {
+--   "nvimtools/none-ls.nvim",
+--   opts = function()
+--     local nls = require("null-ls")
+--     return {
+--       root_dir = require("null-ls.utils").root_pattern(".null-ls-root", ".neoconf.json", "Makefile", ".git"),
+--       sources = {
+--         nls.builtins.code_actions.gitsigns,
+--         nls.builtins.formatting.stylua,
+--         nls.builtins.diagnostics.cmake_lint,
+--         nls.builtins.diagnostics.markdownlint,
+--         nls.builtins.formatting.clang_format,
+--         nls.builtins.formatting.shfmt,
+--         --nls.builtins.formatting.isort,
+--         --nls.builtins.formatting.black.with({
+--         --  extra_args = { "--preview" }
+--         --}),
+--         --nls.builtins.diagnostics.flake8.with({
+--         --  extra_args = { "--ignore=E203", "--max-line-length=88" }
+--         --}),
+--         nls.builtins.formatting.prettier.with({
+--           extra_filetypes = { "markdown" },
+--         }),
+--       },
+--     }
+--   end,
+-- }

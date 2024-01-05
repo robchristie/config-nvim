@@ -23,15 +23,19 @@ return {
         clangd = {
           -- disable Mason to use compatible version of clangd
           mason = false,
-        }
+        },
       },
       setup = {
         clangd = function(_, opts)
           opts.capabilities.offsetEncoding = { "utf-16" }
         end,
-        require("lazyvim.util").on_attach(function(_, buffer)
-          vim.keymap.set("n", "<leader>ch", ":ClangdSwitchSourceHeader<CR>",
-            { desc = "toggle source & header", buffer = buffer })
+        require("lazyvim.util").lsp.on_attach(function(_, buffer)
+          vim.keymap.set(
+            "n",
+            "<leader>ch",
+            ":ClangdSwitchSourceHeader<CR>",
+            { desc = "toggle source & header", buffer = buffer }
+          )
         end),
       },
     },
@@ -108,8 +112,6 @@ return {
           border = "none",
         },
       },
-
     },
-
   },
 }

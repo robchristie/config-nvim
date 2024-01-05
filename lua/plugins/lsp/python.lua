@@ -8,9 +8,12 @@ return {
         settings = {
           pylsp = {
             plugins = {
-              black = {
-                enabled = true,
-                preview = true,
+              --black = {
+              --  enabled = true,
+              --  preview = true,
+              --},
+              mccabe = {
+                enabled = false,
               },
               mypy = {
                 enabled = true,
