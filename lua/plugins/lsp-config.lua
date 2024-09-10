@@ -16,9 +16,10 @@ return {
         "neocmakelsp",
         "rust-analyzer",
         "rust-analyzer",
-        "lua-language-server", -- lua_ls
+        "lua-language-server",
         "bash-language-server",
         "yaml-language-server",
+        "taplo", -- toml
         -- PIP doesn't work?
         --"python-language-server",
         --"black",
@@ -60,6 +61,12 @@ return {
         capabilities = capabilities,
       })
       lspconfig.lua_ls.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.taplo.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.bashls.setup({
         capabilities = capabilities,
       })
       lspconfig.pylsp.setup({
