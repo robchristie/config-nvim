@@ -2,6 +2,8 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+vim.g.python3_host_prog = "/local/users/christir/venv/neovim-312/bin/python3"
+
 vim.opt.spelllang = "en_au"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
